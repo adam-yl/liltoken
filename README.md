@@ -20,6 +20,7 @@ This is an independent personal utility, not an official OpenAI or Anthropic app
 
 - macOS 13 or later. Native glass is used on macOS 26; older systems use popover material.
 - Swift/Xcode Command Line Tools with the macOS 26 SDK to compile the glass API.
+- Python 3.9 or later for validation scripts; build scripts use `/usr/bin/python3`.
 - A signed-in Codex desktop installation for Codex usage.
 - Claude Code's native installer and subscription sign-in for Claude usage.
 
@@ -113,7 +114,7 @@ data appear fresh.
 ```sh
 bash scripts/test.sh
 bash scripts/render-preview.sh
-python3 Tests/statusline-smoke.py  # after building
+/usr/bin/python3 Tests/statusline-smoke.py  # after building
 ```
 
 The normal suite uses synthetic fixtures and mock provider processes. It does
